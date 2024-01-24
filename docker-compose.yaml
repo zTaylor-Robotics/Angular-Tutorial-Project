@@ -1,0 +1,16 @@
+version: '3'
+services:
+  ang-denv:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ang-denv:1.0
+    container_name: angci
+    volumes:
+      - './starting-app:/src'
+    stdin_open: true
+    tty: true
+    command: npm start
+    restart: "no"
+    ports:
+      - "4200:4200"

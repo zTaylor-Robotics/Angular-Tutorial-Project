@@ -28,8 +28,6 @@ import { HousingService } from '../housing.service';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
-  readonly baseUrl = 'https://angular.io/assets/images/tutorials/faa';
-
   housingLocationList: HousingLocation[] = [];
   housingService: HousingService = inject(HousingService);
 

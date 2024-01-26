@@ -9,7 +9,7 @@ export class HousingService {
 
   protected housingLocationList: HousingLocation[] = [
     {
-      id: 0,
+      id: 'AFSH',
       name: 'Acme Fresh Start Housing',
       city: 'Chicago',
       state: 'IL',
@@ -19,7 +19,7 @@ export class HousingService {
       laundry: true
     },
     {
-      id: 1,
+      id: 'ATH',
       name: 'A113 Transitional Housing',
       city: 'Santa Monica',
       state: 'CA',
@@ -29,7 +29,7 @@ export class HousingService {
       laundry: true
     },
     {
-      id: 2,
+      id: 'WBHS',
       name: 'Warm Beds Housing Support',
       city: 'Juneau',
       state: 'AK',
@@ -39,7 +39,7 @@ export class HousingService {
       laundry: false
     },
     {
-      id: 3,
+      id: 'HH',
       name: 'Homesteady Housing',
       city: 'Chicago',
       state: 'IL',
@@ -49,7 +49,7 @@ export class HousingService {
       laundry: false
     },
     {
-      id: 4,
+      id: 'HHG',
       name: 'Happy Homes Group',
       city: 'Gary',
       state: 'IN',
@@ -59,7 +59,7 @@ export class HousingService {
       laundry: false
     },
     {
-      id: 5,
+      id: 'HAG',
       name: 'Hopeful Apartment Group',
       city: 'Oakland',
       state: 'CA',
@@ -69,7 +69,7 @@ export class HousingService {
       laundry: true
     },
     {
-      id: 6,
+      id: 'SST',
       name: 'Seriously Safe Towns',
       city: 'Oakland',
       state: 'CA',
@@ -79,7 +79,7 @@ export class HousingService {
       laundry: true
     },
     {
-      id: 7,
+      id: 'HHS',
       name: 'Hopeful Housing Solutions',
       city: 'Oakland',
       state: 'CA',
@@ -89,7 +89,7 @@ export class HousingService {
       laundry: true
     },
     {
-      id: 8,
+      id: 'SST',
       name: 'Seriously Safe Towns',
       city: 'Oakland',
       state: 'CA',
@@ -99,7 +99,7 @@ export class HousingService {
       laundry: false
     },
     {
-      id: 9,
+      id: 'CST',
       name: 'Capital Safe Towns',
       city: 'Portland',
       state: 'OR',
@@ -114,7 +114,7 @@ export class HousingService {
     return this.housingLocationList;
   }
 
-  getHousingLocationById(id: number): HousingLocation | undefined {
+  getHousingLocationById(id: string): HousingLocation | undefined {
     return this.housingLocationList.find(housingLocation => housingLocation.id === id);
   }
 }

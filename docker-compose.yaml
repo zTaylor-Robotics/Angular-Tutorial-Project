@@ -10,7 +10,7 @@ services:
       - './starting-app:/src'
     stdin_open: true
     tty: true
-    command: npm start
+    command: npm start #install --legacy-peer-deps
     restart: "no"
     ports:
       - "4200:4200"

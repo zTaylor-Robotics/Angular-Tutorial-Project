@@ -1,16 +1,30 @@
 version: '3'
 services:
-  ang-denv:
+  angular-app:
     build:
       context: .
       dockerfile: Dockerfile
     image: ang-denv:1.0
-    container_name: angci
+    container_name: asci
     volumes:
       - './starting-app:/src'
     stdin_open: true
     tty: true
-    command: npm start #install --legacy-peer-deps
+    command: npm start -s #install --legacy-peer-deps 
     restart: "no"
     ports:
       - "4200:4200"
+
+  json-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: jsci
+    volumes:
+      - './starting-app:/src'
+    stdin_open: true
+    tty: true
+    command: json-server db.json
+    restart: "no"
+    ports:
+      - "3000:3000"

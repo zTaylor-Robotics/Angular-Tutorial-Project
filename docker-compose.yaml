@@ -7,7 +7,7 @@ services:
     image: ang-denv:1.0
     container_name: asci
     volumes:
-      - './starting-app:/src'
+      - './Housing_Tutorial:/src'
     stdin_open: true
     tty: true
     command: npm start -s #install --legacy-peer-deps 
@@ -21,7 +21,7 @@ services:
       dockerfile: Dockerfile
     container_name: jsci
     volumes:
-      - './starting-app:/src'
+      - './Housing_Tutorial:/src'
     stdin_open: true
     tty: true
     command: json-server db.json

@@ -21,3 +21,14 @@ button.primary {
   color: white;
   border-radius: 8px;
 }
+button.primary:hover {
+  background: var(--secondary-color);
+  border: solid 1px var(--accent-color);
+  cursor: pointer;
+}
+button.primary:active {
+  background: var(--shadow-color);
+  border: solid 1px var(--shadow-color);
+  color: var(--primary-color);
+}
+

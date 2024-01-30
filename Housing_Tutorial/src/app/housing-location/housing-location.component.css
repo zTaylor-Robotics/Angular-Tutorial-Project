@@ -44,6 +44,9 @@ section.listing a::after {
   content: "\203A";
   margin-left: 5px;
 }
+section.listing a:hover {
+  color: var(--secondary-color);
+}
 
 
 /*

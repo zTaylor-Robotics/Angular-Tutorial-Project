@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component} from '@angular/core';
 import { HomeComponent } from './home/home.component'
 import { LogosvgComponent } from './logosvg/logosvg.component'
 import { RouterModule } from '@angular/router';
